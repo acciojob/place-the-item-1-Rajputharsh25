@@ -1,2 +1,17 @@
+.holder {
+  display: flex;
+  /* Space between items with first/last touching the edges */
+  justify-content: space-between;
+  /* Allows items to move to the next row instead of squashing */
+  flex-wrap: wrap;
+}
 
-/* Your CSS Code here. */
+.item {
+  /* Prevents items from shrinking/squashing */
+  flex-shrink: 0;
+  /* Standard square sizing as per the image */
+  width: 150px;
+  height: 150px;
+  /* Optional: adds space between rows if items wrap */
+  margin-bottom: 10px;
+}
